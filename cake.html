@@ -199,6 +199,7 @@
         .next-page-button {
             position: fixed;
             bottom: 40px;
+            display: none;
             padding: 15px 40px;
             font-size: 1.2rem;
             background: linear-gradient(45deg, #ff9ecd, #ff71b6);
@@ -222,6 +223,7 @@
         .next-page-button::after {
             content: '→';
             font-size: 1.4rem;
+            display: none;
             transition: transform 0.3s ease;
         }
 
@@ -234,6 +236,7 @@
         }
 
         .next-page-button:hover::after {
+            display: none;
             transform: translateX(5px);
         }
 
@@ -251,6 +254,7 @@
 
         .next-page-button.show {
             opacity: 1;
+            display: none;
             transform: translateY(0);
             animation: pulse 2s infinite;
         }
@@ -283,6 +287,8 @@
             </div>
         </div>
     </div>
+
+    <button class="next-page-button">Next Page</button>
 
     <script>
         const cake = document.querySelector('.cake-container');
